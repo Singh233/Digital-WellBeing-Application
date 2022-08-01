@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity"
+    android:background="@color/white"
+    >
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/group_lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_back_button"
+        android:layout_marginTop="50dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/text_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="gorup.json"
+        app:lottie_loop="true" />
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/reg_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/ic_back_button"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_back_button"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Sign up"
+        android:textColor="#000719"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_name_layout"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_login"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_design"
+        android:elevation="1.5dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:hintEnabled="false"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_input_design"
+            android:drawableStart="@drawable/ic_baseline_person_pin_24"
+            android:drawablePadding="8dip"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Full name"
+            android:textSize="17sp"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_email_layout"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_name_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_design"
+        android:elevation="1.5dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:hintEnabled="false"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_name_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sign_email_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_input_design"
+            android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+            android:drawablePadding="8dip"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Email ID"
+            android:textSize="17sp"
+
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_password_layout"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_email_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_design"
+        android:elevation="1.5dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_email_layout"
+        app:passwordToggleEnabled="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sign_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_input_design"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dip"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Password"
+            android:textSize="17sp"
+
+            android:inputType="textPassword"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_button"
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/terms_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms_layout"
+        />
+
+    <LinearLayout
+        android:id="@+id/terms_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_password_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_password_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="By creating passcode you agree to our"
+            android:textColor="@color/colorGray"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Terms &amp; Conditions"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text=" and "
+                android:textColor="@color/colorGray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Privacy Policy"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/blurView1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:realtimeBlurRadius="25dp"
+
+        app:realtimeOverlayColor="#4AFFFFFF" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/info_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="#00FFFFFF"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/expand_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hello_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="3dp"
+                android:text="Hello, there"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/error_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="3dp"
+                android:text="Invalid Email!"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-15dp"
+                android:src="@drawable/line3" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/name_tick_lottie"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+
+        android:translationZ="90dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/register_name_layout"
+        app:layout_constraintEnd_toEndOf="@+id/register_name_layout"
+        app:layout_constraintTop_toTopOf="@+id/register_name_layout"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="tick2.json"
+        app:lottie_loop="false" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/email_tick_lottie"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+
+        android:translationZ="90dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_email_layout"
+        app:layout_constraintEnd_toEndOf="@+id/sign_email_layout"
+        app:layout_constraintTop_toTopOf="@+id/sign_email_layout"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="tick2.json"
+        app:lottie_loop="false" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/name_error_lottie"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+
+        android:translationZ="90dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/register_name_layout"
+        app:layout_constraintEnd_toEndOf="@+id/register_name_layout"
+        app:layout_constraintTop_toTopOf="@+id/register_name_layout"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="error.json"
+        app:lottie_loop="false" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/email_error_lottie"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+
+        android:translationZ="90dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_email_layout"
+        app:layout_constraintEnd_toEndOf="@+id/sign_email_layout"
+        app:layout_constraintTop_toTopOf="@+id/sign_email_layout"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="error.json"
+        app:lottie_loop="false" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/name_loading_lottie"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+
+        android:translationZ="90dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/register_name_layout"
+        app:layout_constraintEnd_toEndOf="@+id/register_name_layout"
+        app:layout_constraintTop_toTopOf="@+id/register_name_layout"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="input_loading.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/email_loading_lottie"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+
+        android:translationZ="90dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_email_layout"
+        app:layout_constraintEnd_toEndOf="@+id/sign_email_layout"
+        app:layout_constraintTop_toTopOf="@+id/sign_email_layout"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="input_loading.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_lottie"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_button"
+        android:layout_centerHorizontal="true"
+        android:translationZ="90dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/register_button"
+        app:layout_constraintEnd_toEndOf="@+id/register_button"
+        app:layout_constraintStart_toStartOf="@+id/register_button"
+        app:layout_constraintTop_toTopOf="@+id/register_button"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loading.json"
+        app:lottie_loop="true" />
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/register_options_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="3dp"
+        android:visibility="visible"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/register_button"
+        android:animateLayoutChanges="true"
+
+        >
+
+
+<!--        <io.alterac.blurkit.BlurLayout-->
+<!--            android:id="@+id/blurLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:blk_blurRadius="15"-->
+<!--            app:blk_fps="60"-->
+<!--            />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/arrow_lottie"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="arrowupdown.json"
+                app:lottie_loop="true"
+                android:scaleY="-1"
+                android:layout_marginTop="0dp"
+                android:onClick="hide"
+                />
+
+
+            <TextView
+                android:id="@+id/OR_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="or Continue using"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp"
+                android:layout_marginTop="-10dp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/floating_buttons_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/OR_text"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/google_register_button"
+                    android:layout_width="305dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/google_button"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Sign Up with Google"
+                    android:textAllCaps="false"
+                    android:textColor="#F44336"
+                    android:textSize="17sp"
+
+                    android:drawableStart="@drawable/google24"
+                    android:paddingStart="12dp"
+                    android:drawablePadding="-15dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/terms_layout"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/phone_register_button"
+                    android:layout_width="305dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/phone_button"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Sign Up with Phone"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:layout_marginTop="20dp"
+
+                    android:drawableStart="@drawable/phone2"
+                    android:paddingStart="12dp"
+                    android:drawablePadding="-15dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/terms_layout"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/fb_register_button"
+                    android:layout_width="305dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/fb_button"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Sign Up with Facebook"
+                    android:textAllCaps="false"
+                    android:textColor="#3d6ad6"
+                    android:textSize="17sp"
+                    android:layout_marginTop="20dp"
+
+                    android:drawableStart="@drawable/fb32"
+                    android:paddingStart="12dp"
+                    android:drawablePadding="-15dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/terms_layout"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/twitter_register_button"
+                    android:layout_width="305dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/twitter_button"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Sign Up with Twitter"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/twitter"
+                    android:paddingStart="12dp"
+                    android:drawablePadding="-15dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/terms_layout"
+                    />
+
+<!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                    android:id="@+id/floating_fb_login_button"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    android:src="@drawable/fb"-->
+<!--                    app:elevation="2dp" />-->
+
+<!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                    android:id="@+id/floating_google_login_button"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    android:src="@drawable/google"-->
+<!--                    app:elevation="2dp" />-->
+
+
+<!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                    android:id="@+id/floating_phone_login_button"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    android:src="@drawable/phone"-->
+<!--                    app:elevation="2dp"-->
+
+<!--                    />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Already have an account? "
+                    android:textColor="@color/colorGray"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/sign_up_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Login"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="20dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:realtimeBlurRadius="20dp"
+        android:visibility="gone"
+        app:realtimeOverlayColor="#59000000"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

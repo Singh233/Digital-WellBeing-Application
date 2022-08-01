@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="4dp"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:id="@+id/article_adapter_ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/article_adapter_tv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:padding="10dp"
+
+            android:id="@+id/article_adapter_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            />
+
+        <TextView
+
+
+            android:id="@+id/article_adapter_tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/colorGray"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

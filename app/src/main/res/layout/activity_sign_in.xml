@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignInActivity"
+    android:layout_marginTop="00dp"
+    android:outlineProvider="bounds"
+    android:elevation="10dp"
+    android:id="@+id/sign_in_layout"
+    android:background="@drawable/rel_layout_corner_radius"
+
+    >
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/hello_lottie"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/sign_back_button"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="-30dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="hello.json"
+        app:lottie_loop="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/sign_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_button"
+        android:background="#00FFFFFF"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+
+        />
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_back_button"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Login"
+        android:textColor="#000719"
+        android:textSize="40sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_email_layout"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_design"
+        android:elevation="1.5dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:hintEnabled="false"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sign_email_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_input_design"
+            android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+            android:drawablePadding="8dip"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_password_layout"
+        android:layout_below="@id/sign_email_layout"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_design"
+        android:elevation="1.5dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:hintEnabled="false"
+        android:gravity="center_vertical"
+        app:passwordToggleEnabled="true"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sign_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_input_design"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dip"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Password"
+            android:inputType="textPassword"
+
+
+            />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/forgot_password_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_password_layout"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorPrimary" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/forgot_password_link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_button"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/OR_text"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="@color/colorGray"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/sign_up_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/OR_text"
+        android:layout_marginTop="75dp"
+        >
+        <TextView
+            android:layout_below="@+id/OR_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "
+            android:textColor="@color/colorGray"
+            android:fontFamily="@font/poppins"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/sign_up_link"
+            android:layout_below="@+id/OR_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/floating_buttons_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/OR_text"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_fb_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fb"
+            android:backgroundTint="@color/white"
+            app:elevation="2dp"
+            android:background="@color/white"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_google_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/white"
+            app:elevation="2dp"
+            android:src="@drawable/google" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_phone_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone"
+            android:backgroundTint="@color/white"
+            app:elevation="2dp"
+            android:layout_marginStart="20dp"
+
+            />
+
+    </LinearLayout>
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/blurView1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        app:realtimeBlurRadius="25dp"
+        app:realtimeOverlayColor="#4AFFFFFF"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/info_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:onClick="motion"
+        android:requiresFadingEdge="vertical"
+        android:visibility="visible"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="10dp"
+
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/expand_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hello_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="3dp"
+                android:text="Hello, there"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/error_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="3dp"
+                android:text="Invalid Email!"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-15dp"
+                android:src="@drawable/line3" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/tick_lottie"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/sign_email_layout"
+        android:layout_alignEnd="@+id/sign_email_layout"
+        android:layout_marginTop="-79dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="tick2.json"
+        app:lottie_loop="false"
+        android:translationZ="90dp"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/error_lottie"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/sign_email_layout"
+        android:layout_alignEnd="@+id/sign_email_layout"
+        android:layout_marginTop="-79dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="error.json"
+        app:lottie_loop="false"
+        android:translationZ="90dp"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_lottie"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="-105dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loading.json"
+        app:lottie_loop="true"
+        android:translationZ="90dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/forgot_password_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:cardElevation="2dp"
+        android:onClick="motion"
+        android:animateLayoutChanges="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-15dp"
+        app:cardCornerRadius="18dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/forgot_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/arrow_lottie"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="arrowupdown.json"
+                app:lottie_loop="true"
+                android:layout_marginTop="0dp"
+                android:onClick="motion"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+            <TextView
+                android:id="@+id/text_forgot_password1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Forgot"
+                android:textColor="#000719"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/text_forgot_password2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-18dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Password?"
+                android:textColor="#000719"
+                android:textSize="35sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Don't worry! It happens. Please enter the"
+                android:textColor="#5E5E5E"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-4dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="address associated with your account."
+                android:textColor="#5E5E5E"
+                android:textSize="16sp"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/forgot_email_layout"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text_design"
+                android:elevation="1.5dp"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:hintEnabled="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/forgot_email_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_input_design"
+                    android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+                    android:drawablePadding="8dip"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Email ID"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/forgot_submit_button"
+                android:layout_width="275dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_button"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Submit"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Don't have an account? "
+                    android:textColor="@color/colorGray"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="60dp"
+                    />
+
+                <TextView
+                    android:id="@+id/forgot_sign_up_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Sign up"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="60dp"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/blurView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:realtimeBlurRadius="30dp"
+        android:visibility="gone"
+        app:realtimeOverlayColor="#59000000"
+        />
+
+
+</RelativeLayout>

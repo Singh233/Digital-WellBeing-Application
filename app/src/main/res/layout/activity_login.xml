@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="00dp"
+    tools:context=".ui.LoginActivity"
+    android:id="@+id/rel_layout1"
+    android:background="@drawable/rel_layout_corner_radius"
+
+
+    >
+
+<!--    <io.alterac.blurkit.BlurLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:blk_blurRadius="24"-->
+<!--        app:blk_fps="60"-->
+<!--        app:blk_downscaleFactor="0.09"-->
+
+<!--        >-->
+
+<!--    </io.alterac.blurkit.BlurLayout>-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-20dp"
+        android:elevation="2dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="hi.json"
+        app:lottie_repeatCount="0"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie2"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginLeft="-20dp"
+        android:elevation="2dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="landinglogin2.json"
+        app:lottie_loop="true" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lottie2"
+        android:layout_marginTop="-50dp"
+        >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lottie2"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Discover your"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="32sp"
+
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Digital control Here"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Get a view of your daily Digital Habits"
+            android:textColor="@color/colorGray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Maintain better balance with Technology."
+            android:textColor="@color/colorGray"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="160dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/landing_sign_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@drawable/signin_button_text_color"
+            android:textSize="17sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register_button"
+            android:layout_width="160dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/landing_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@drawable/landing_register_button_text_color"
+            android:textSize="17sp"
+
+
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/copyright_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="©2021"
+        android:textColor="@color/colorGray"
+        android:textSize="15sp" />
+
+
+
+
+
+</RelativeLayout>

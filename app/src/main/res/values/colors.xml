@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0065FF</color>
+    <color name="colorPrimaryDark">#1E95FF</color>
+    <color name="colorAccent">#1E95FF</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="gray_darken">#DDDDDD</color>
+    <color name="colorGray">#4A4A4A</color>
+    <color name="colorLearnMode">#F9BE84</color>
+    <color name="colorFocusMode">#5053BC</color>
+    <color name="colorWorkMode">#FFD3D4</color>
+    <color name="colorSocialMode">#6394f3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>

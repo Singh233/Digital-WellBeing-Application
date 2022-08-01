@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingTop="40dp"
+        android:text="Filter"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:text="Breathe in"
+
+    android:textColor="#000000"
+    android:textSize="14sp"
+    android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/breathIn_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="0"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:paddingRight="10dp"
+            android:text="10"
+
+            />
+    </RelativeLayout>
+
+    <SeekBar
+        android:min="0"
+        android:max="10"
+        android:id="@+id/breathInSeekBar"
+        android:thumbTint="#1543A0"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Hold"
+
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hold_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="0"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:paddingRight="10dp"
+            android:text="10"
+
+            />
+    </RelativeLayout>
+
+    <SeekBar
+        android:min="0"
+        android:max="10"
+        android:id="@+id/holdSeekBar"
+        android:thumbTint="#1543A0"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Breathe out"
+
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/breathOut_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="0"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:paddingRight="10dp"
+            android:text="10"
+
+            />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/breathOutSeekBar"
+        android:min="0"
+        android:max="10"
+        android:thumbTint="#1543A0"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"  />
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="220dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sign_up_button"
+        android:text="RESET"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>

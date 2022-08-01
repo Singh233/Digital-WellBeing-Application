@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    card_view:cardElevation="0dp"
+    card_view:contentPadding="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardMaxElevation="5dp"
+    android:layout_margin="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/Apk_Name"
+            android:layout_toEndOf="@id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/notification_indicator"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            card_view:cardBackgroundColor="#CD676767"
+            card_view:cardCornerRadius="10dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

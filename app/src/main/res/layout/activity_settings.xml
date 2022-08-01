@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/options"
+            android:layout_alignParentEnd="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relative1"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile_cardview"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="2dp"
+            android:translationZ="45dp"
+            app:cardCornerRadius="50dp"
+
+
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/profile_lottie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="profile2.json"
+                app:lottie_loop="true"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/user_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profile_cardview"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Ankit Vishwakarma"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profile_cardview"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Senior Designer"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_edit_attributes_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative2"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="Settings"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp"
+                android:layout_below="@+id/relative3"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintVertical_bias="0.511"
+                    tools:layout_editor_absoluteX="-55dp"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/fixed_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+
+                        >
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/profile_lottie_notification"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:lottie_fileName="profile.json"
+                            android:layout_marginStart="10dp"
+                            app:lottie_autoPlay="true"
+
+                            app:lottie_loop="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
+                            app:layout_constraintStart_toStartOf="@+id/fixed_layout"
+                            app:layout_constraintTop_toTopOf="@+id/fixed_layout"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+
+                            android:text="Profile Settings"
+                            android:textSize="18sp"
+
+
+                            app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
+                            app:layout_constraintStart_toEndOf="@+id/profile_lottie_notification"
+                            app:layout_constraintTop_toTopOf="@+id/fixed_layout" />
+
+                        <ImageView
+                            android:id="@+id/profile_arrow_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/expand_arrow_30"
+                            android:layout_marginEnd="20dp"
+
+                            app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
+                            app:layout_constraintEnd_toEndOf="@+id/fixed_layout"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="@+id/fixed_layout"
+                            app:layout_constraintTop_toTopOf="@+id/fixed_layout"
+                            />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/settings_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="1dp"
+            android:layout_below="@+id/profile_settings"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+
+
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintVertical_bias="0.511"
+                tools:layout_editor_absoluteX="-55dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/settings_fixed_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+
+                    >
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/settings_lottie_notification"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:lottie_fileName="settings.json"
+                        android:layout_marginStart="10dp"
+                        app:lottie_autoPlay="true"
+
+                        app:layout_constraintBottom_toBottomOf="@+id/settings_fixed_layout"
+                        app:layout_constraintStart_toStartOf="@+id/settings_fixed_layout"
+                        app:layout_constraintTop_toTopOf="@+id/settings_fixed_layout"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+
+                        android:text="Application Settings"
+                        android:textSize="18sp"
+
+
+                        app:layout_constraintBottom_toBottomOf="@+id/settings_fixed_layout"
+                        app:layout_constraintStart_toEndOf="@+id/settings_lottie_notification"
+                        app:layout_constraintTop_toTopOf="@+id/settings_fixed_layout" />
+
+                    <ImageView
+                        android:id="@+id/settings_arrow_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/expand_arrow_30"
+                        android:layout_marginEnd="20dp"
+
+                        app:layout_constraintBottom_toBottomOf="@+id/settings_fixed_layout"
+                        app:layout_constraintEnd_toEndOf="@+id/settings_fixed_layout"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/settings_fixed_layout"
+                        app:layout_constraintTop_toTopOf="@+id/settings_fixed_layout"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/settings_hidden_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/settings_fixed_layout">
+
+
+                    <RelativeLayout
+                        android:id="@+id/settings_relative"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+
+                        >
+
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/group_system"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:background="@drawable/bg_settings_item"
+                            android:paddingEnd="16dp"
+                            android:paddingStart="16dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toStartOf="@+id/switch_system_apps"
+                                android:text="@string/hide_system_apps"
+                                android:fontFamily="@font/poppins_medium"
+                                android:textSize="16sp"
+
+                                />
+
+                            <Switch
+                                android:id="@+id/switch_system_apps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/group_uninstall"
+                            android:layout_below="@id/group_system"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:background="@drawable/bg_settings_item"
+                            android:paddingEnd="16dp"
+                            android:paddingStart="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginBottom="17dp"
+                                android:text="@string/hide_uninstall_apps"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins_medium"
+
+                                />
+
+                            <Switch
+                                android:id="@+id/switch_uninstall_appps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/group_ignore"
+                            android:layout_below="@id/group_uninstall"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:background="@drawable/bg_settings_item"
+                            android:paddingEnd="16dp"
+                            android:paddingStart="16dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/ignore_list"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins_medium"
+
+                                />
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/policy_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp"
+                android:layout_below="@+id/settings_card"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintVertical_bias="0.511"
+                    tools:layout_editor_absoluteX="-55dp"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/policy_fixed_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+
+                        >
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/policy_lottie_notification"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:lottie_fileName="policy.json"
+                            android:layout_marginStart="10dp"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+
+                            app:layout_constraintBottom_toBottomOf="@+id/policy_fixed_layout"
+                            app:layout_constraintStart_toStartOf="@+id/policy_fixed_layout"
+                            app:layout_constraintTop_toTopOf="@+id/policy_fixed_layout"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+
+                            android:text="Privacy Policy"
+                            android:textSize="18sp"
+
+
+                            app:layout_constraintBottom_toBottomOf="@+id/policy_fixed_layout"
+                            app:layout_constraintStart_toEndOf="@+id/policy_lottie_notification"
+                            app:layout_constraintTop_toTopOf="@+id/policy_fixed_layout" />
+
+                        <ImageView
+                            android:id="@+id/policy_arrow_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/expand_arrow_30"
+                            android:layout_marginEnd="20dp"
+
+                            app:layout_constraintBottom_toBottomOf="@+id/policy_fixed_layout"
+                            app:layout_constraintEnd_toEndOf="@+id/policy_fixed_layout"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="@+id/policy_fixed_layout"
+                            app:layout_constraintTop_toTopOf="@+id/policy_fixed_layout"
+                            />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/policy_hidden_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_margin="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/policy_fixed_layout">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/privacy_policy"
+                            android:fontFamily="@font/poppins_medium"
+
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/about_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="1dp"
+                android:layout_below="@+id/policy_card"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintVertical_bias="0.511"
+                    tools:layout_editor_absoluteX="-55dp"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/about_fixed_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+
+                        >
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/about_lottie_notification"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:lottie_fileName="about.json"
+                            android:layout_marginStart="10dp"
+                            app:lottie_autoPlay="true"
+
+                            app:layout_constraintBottom_toBottomOf="@+id/about_fixed_layout"
+                            app:layout_constraintStart_toStartOf="@+id/about_fixed_layout"
+                            app:layout_constraintTop_toTopOf="@+id/about_fixed_layout"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+
+                            android:text="About Us"
+                            android:textSize="18sp"
+
+
+                            app:layout_constraintBottom_toBottomOf="@+id/about_fixed_layout"
+                            app:layout_constraintStart_toEndOf="@+id/about_lottie_notification"
+                            app:layout_constraintTop_toTopOf="@+id/about_fixed_layout" />
+
+                        <ImageView
+                            android:id="@+id/about_arrow_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/expand_arrow_30"
+                            android:layout_marginEnd="20dp"
+
+                            app:layout_constraintBottom_toBottomOf="@+id/about_fixed_layout"
+                            app:layout_constraintEnd_toEndOf="@+id/about_fixed_layout"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="@+id/about_fixed_layout"
+                            app:layout_constraintTop_toTopOf="@+id/about_fixed_layout"
+                            />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/about_hidden_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_margin="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/about_fixed_layout">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/privacy_policy"
+                            android:fontFamily="@font/poppins_medium"
+
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_card"
+                android:layout_marginTop="30dp">
+
+
+                <TextView
+                    android:id="@+id/texttt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="8dp"
+                    android:text="My Account"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texttt"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Switch to Other Account"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        />
+
+                    <TextView
+                        android:id="@+id/logout_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log Out"
+                        android:textSize="18sp"
+                        android:textColor="#FF0000"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

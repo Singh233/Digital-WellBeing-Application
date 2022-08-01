@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/home_selector"
+        android:title="Home"
+        />
+
+    <item android:id="@+id/menu_work"
+        android:icon="@drawable/work_selector"
+        android:title="Work" />
+
+    <item android:id="@+id/menu_education"
+        android:icon="@drawable/learn_selector"
+        android:title="Learn"
+        />
+
+    <item android:id="@+id/menu_social"
+        android:icon="@drawable/child_selector"
+        android:title="Social" />
+
+    <item android:id="@+id/menu_focus"
+        android:icon="@drawable/focus_selector"
+        android:title="Focus" />
+
+
+
+</menu>

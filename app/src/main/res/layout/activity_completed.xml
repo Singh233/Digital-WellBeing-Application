@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".CompletedActivity">
+
+    <ImageView
+        android:id="@+id/back_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_button"
+        />
+
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="283dp"
+        android:layout_height="283dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg2_completed"
+        android:gravity="center"
+        android:text="Start Breathing"
+
+        android:textColor="#2788D6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_imageView"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <ImageView
+        android:id="@+id/bg1"
+        android:layout_width="216dp"
+        android:layout_height="221dp"
+        android:background="@drawable/bg1_completed"
+        android:gravity="center"
+        android:text="Start Breathing"
+
+        android:textColor="#2788D6"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toTopOf="@+id/bg2" />
+
+    <ImageView
+        android:id="@+id/startBreathing_imageView"
+        android:layout_width="149dp"
+        android:layout_height="153dp"
+        android:background="@drawable/circle_completed"
+        android:gravity="center"
+        android:text="Start Breathing"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+
+        app:layout_constraintBottom_toBottomOf="@+id/bg1"
+        app:layout_constraintEnd_toEndOf="@+id/bg1"
+        app:layout_constraintStart_toStartOf="@+id/bg1"
+        app:layout_constraintTop_toTopOf="@+id/bg1" />
+
+
+    <TextView
+        android:id="@+id/textbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Have a great day ahead!"
+
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:translationZ="90dp"
+
+        app:layout_constraintBottom_toTopOf="@id/go_back_button"
+        app:layout_constraintEnd_toEndOf="@+id/carddd"
+        app:layout_constraintStart_toStartOf="@+id/carddd"
+        app:layout_constraintTop_toTopOf="@+id/carddd" />
+
+    <Button
+        android:id="@+id/go_back_button"
+        android:layout_width="170dp"
+        android:layout_height="41dp"
+        android:background="@drawable/back_button"
+        android:fontFamily="@font/poppins_medium"
+        android:text=" Go Back"
+
+        android:textColor="@color/colorFocusMode"
+        app:layout_constraintBottom_toBottomOf="@+id/carddd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textbox" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carddd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="@color/colorFocusMode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="15dp"
+        android:translationZ="-90dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/startBreathing_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/startBreathing_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/startBreathing_imageView"
+        app:layout_constraintStart_toStartOf="@+id/startBreathing_imageView"
+        app:layout_constraintTop_toTopOf="@+id/startBreathing_imageView" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

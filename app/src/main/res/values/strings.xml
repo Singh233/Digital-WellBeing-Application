@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">About</string>
+    <string name="app_name">Digital Wellbeing</string>
+
+    <string name="close">Close</string>
+
+    <string name="detail">Details</string>
+    <string name="duration">Duration</string>
+    <string name="sort_by">Sort</string>
+
+    <string name="enable_apps_monitor">Enable apps monitor</string>
+    <string name="enable_apps_monitoring">Apps monitoring</string>
+
+    <string name="feedback">TY Project 2021-22</string>
+
+    <string name="grant_success">Grant permission successfully</string>
+
+    <string name="hide_system_apps">Hide System Apps</string>
+    <string name="hide_uninstall_apps">Hide Uninstalled Apps</string>
+
+    <string name="ignore">Ignore this app</string>
+    <string name="ignore_hint">Apps in this list will be hidden</string>
+    <string name="ignore_list">Ignore list</string>
+    <string name="ignore_success">Move to ignore list successfully</string>
+
+    <string name="more">More detail</string>
+    <string name="app_info">App info</string>
+
+    <string name="notification_title">AppTimeline running</string>
+    <string name="notification_message">monitoring your app usage</string>
+    <string name="not_support">You device not support monitoring</string>
+
+    <string name="open">Open</string>
+
+    <string name="refresh">Refresh</string>
+
+    <string name="settings">Settings</string>
+    <string name="settings_function">Functions</string>
+    <string name="settings_more">More</string>
+    <string name="share"></string>
+    <string name="share_desc"></string>
+    <string name="slogan">A way to Live Better.</string>
+    <string name="sort">Sort By</string>
+
+    <string name="toast_permission">Please find \"AppsTimeline\" and grant the permission</string>
+    <string name="times">%1$s · %2$d times</string>
+    <string name="times_only">times</string>
+    <string name="total">%1$s</string>
+
+    <string name="workCard">This Card displays total time you have been productive using our Work Mode. Looking at Stats you are doing great, Keep it Up.</string>
+    <string name="educationCard">%1$s</string>
+    <string name="socialCard">%1$s</string>
+    <string name="focusCard">%1$s</string>
+
+    <string name="version">TY Final Year Project By Ankit Vishwakarma, Utkarsh Singh and Sanambir Singh</string>
+
+    <string name="wifi_data">WiFi:%1$s · Mobile:%2$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="privacy_policy">This privacy policy ("policy") will help you understand how we  uses and protects the data you provide to us when you visit and use [website] ("website", "service").
+We reserve the right to change this policy at any given time, of which you will be promptly updated. If you want to make sure that you are up to date with the latest changes, we advise you to frequently visit this page.
+What User Data We Collect
+When you visit the website, we may collect the following data:
+•	Your IP address.
+•	Your contact information and email address.
+•	Other information such as interests and preferences.
+•	Data profile regarding your online behavior on our website.
+Why We Collect Your Data
+We are collecting your data for several reasons:
+•	To better understand your needs.
+•	To improve our services and products.
+•	To send you promotional emails containing the information we think you will find interesting.
+•	To contact you to fill out surveys and participate in other types of market research.
+•	To customize our website according to your online behavior and personal preferences.
+Safeguarding and Securing the Data
+ is committed to securing your data and keeping it confidential. It has done all in its power to prevent data theft, unauthorized access, and disclosure by implementing the latest technologies and software, which help us safeguard all the information we collect online.
+</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:padding="25dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="25dp"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="Date And Time" />
+        <Button
+            android:id="@+id/selectDate"
+            android:layout_below="@id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/landing_button"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:hint="Message"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_below="@id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sign_up_button"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/white"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
